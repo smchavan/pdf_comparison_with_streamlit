@@ -121,6 +121,7 @@ def main():
                 tools=tools,
                 llm=llm,
                 verbose=True,
+                handle_parsing_errors=True
             )
 
             st.write(agent({"input": question}))
